@@ -7,14 +7,23 @@
   <body>
     <h1>英語リスニングクイズ</h1>
     <div class="audio-player">
-      <audio
-        src="/Users/fishi/Programming/demo/src/main/resources/templates/audio/apple.mp3"></audio>
-      <div class="controls">
-        <button class="play" type="button">Play</button>
-        <button class="pause" type="button">Pause</button>
-        <button class="stop" type="button">Stop</button>
-      </div>
+      <audio id="audioElement" controls src="/audio/apple.mp3"></audio>
     </div>
     <input type="text" id="answerInput" placeholder="回答を入力" />
+
+    <script>
+      // const audioElement = document.getElementById("audioElement");
+      // const playButton = Document.getElementById("playButton");
+      // const stopButton = Document.getElementById("stopButton");
+
+      // playButton.addEventListener("click", function () {
+      //   audioElement.play();
+      // });
+
+      // stopButton.addEventListener("click", function () {
+      //   audioElement.pause();
+      //   audioElement.currentTime = 0;
+      // });
+    </script>
   </body>
 </html>
