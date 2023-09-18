@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
-    <title>英語リスニングクイズ</title>
-    <style>
-      #answerInput {
-        width: 300px;
-      }
-    </style>
-    <script src="quiz.js"></script>
+    <script type="text/javascript" th:src="@{/quiz.js}"></script>
+    <title>index page</title>
   </head>
   <body>
-    <h1>英語リスニングクイズ</h1>
-    <div class="audio-player">
-      <audio id="audioElement" controls src="/audio/apple.mp3"></audio>
+    <div>
+      ここはdivタグになります。背景色(黄色)はdemo.cssから、
+      文字色(赤色)はdemo2.cssから取得しています。
     </div>
-    <!-- <div>
-      <input type="text" id="answer" placeholder="聞き取った英語をタイプして下さい" />
-      <button id="submit" onclick="buttonClick()">送信</button>
-    </div> -->
-    <!-- 正誤表記の領域を追加 -->
-    <!-- <div id="result">変更前</div> -->
-    <input type="button" value="ボタン" onclick="sample();" />
-    <div id="area1">変更前</div>
+    <br /><br />
+    下記ボタンを押下した際のダイアログは、demo.jsから取得しています。<br />
+    <input type="button" value="JavaScript呼出_demo" onclick="demoTest();" />
+    <br /><br />
+    下記ボタンを押下した際のダイアログは、demo2.jsから取得しています。<br />
+    <input type="button" value="JavaScript呼出_demo2" onclick="demoTest2();" />
   </body>
 </html>
