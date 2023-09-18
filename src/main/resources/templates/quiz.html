@@ -3,27 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <title>英語リスニングクイズ</title>
+    <style>
+      #answerInput {
+        width: 300px;
+      }
+    </style>
+    <script src="quiz.js"></script>
   </head>
   <body>
     <h1>英語リスニングクイズ</h1>
     <div class="audio-player">
       <audio id="audioElement" controls src="/audio/apple.mp3"></audio>
     </div>
-    <input type="text" id="answerInput" placeholder="回答を入力" />
-
-    <script>
-      // const audioElement = document.getElementById("audioElement");
-      // const playButton = Document.getElementById("playButton");
-      // const stopButton = Document.getElementById("stopButton");
-
-      // playButton.addEventListener("click", function () {
-      //   audioElement.play();
-      // });
-
-      // stopButton.addEventListener("click", function () {
-      //   audioElement.pause();
-      //   audioElement.currentTime = 0;
-      // });
-    </script>
+    <!-- <div>
+      <input type="text" id="answer" placeholder="聞き取った英語をタイプして下さい" />
+      <button id="submit" onclick="buttonClick()">送信</button>
+    </div> -->
+    <!-- 正誤表記の領域を追加 -->
+    <!-- <div id="result">変更前</div> -->
+    <input type="button" value="ボタン" onclick="sample();" />
+    <div id="area1">変更前</div>
   </body>
 </html>
