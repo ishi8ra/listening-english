@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <title>英語リスニングクイズ</title>
+    <style>
+      #answerInput {
+        width: 300px;
+      }
+    </style>
+    <script src="js/quiz.js"></script>
   </head>
   <body>
     <h1>英語リスニングクイズ</h1>
     <div class="audio-player">
-      <audio
-        src="/Users/fishi/Programming/demo/src/main/resources/templates/audio/apple.mp3"></audio>
-      <div class="controls">
-        <button class="play" type="button">Play</button>
-        <button class="pause" type="button">Pause</button>
-        <button class="stop" type="button">Stop</button>
-      </div>
+      <audio id="audioElement" controls src="/audio/apple.mp3"></audio>
     </div>
-    <input type="text" id="answerInput" placeholder="回答を入力" />
+    <div>
+      <input type="text" id="answer" placeholder="聞き取った英語をタイプして下さい" />
+      <input type="button" value="回答送信" onclick="submitAnswer();" />
+    </div>
+    <div id="result">正誤表記の場所</div>
   </body>
 </html>
