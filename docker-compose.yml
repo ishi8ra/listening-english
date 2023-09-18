@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  demo:
+    image: maven:3
+    restart: always
+    command: mvn spring-boot:run
+    volumes:
+      - .:/opt/demo
+      - m2:/root/.m2
+    working_dir: /opt/demo
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+    environment:
+      TZ: Asia/Tokyo
+
+volumes:
+  m2:
+    external: true
