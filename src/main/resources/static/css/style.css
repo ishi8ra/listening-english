@@ -1,3 +1,7 @@
+html {
+  overflow: scroll;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -47,6 +51,14 @@ button {
   /* TODO クリックのアクションを付ける */
 }
 
+#toggleImgButton {
+  width: 150px;
+}
+
+#toggleVideoButton {
+  width: 150px;
+}
+
 .image-section {
   text-align: center;
   margin-top: 20px;
@@ -61,8 +73,4 @@ video {
   max-width: auto;
   width: 600px;
   height: 300px;
-}
-
-#imageFigure {
-  display: none;
 }

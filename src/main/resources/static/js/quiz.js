@@ -29,10 +29,10 @@ toggleImgButton.addEventListener("click", function () {
 
   if (imageFigure.style.display === "none") {
     imageFigure.style.display = "block";
-    toggleImgButton.textContent = "画像を非表示";
+    toggleImgButton.innerHTML = "ヒント1<br />静止画を非表示";
   } else {
     imageFigure.style.display = "none";
-    toggleImgButton.textContent = "画像を表示";
+    toggleImgButton.innerHTML = "ヒント1<br />静止画を表示";
   }
 });
 
@@ -46,9 +46,9 @@ toggleVideoButton.addEventListener("click", function () {
 
   if (videoFigure.style.display === "none") {
     videoFigure.style.display = "block";
-    toggleVideoButton.textContent = "動画を非表示";
+    toggleVideoButton.innerHTML = "ヒント2<br />動画を非表示";
   } else {
     videoFigure.style.display = "none";
-    toggleVideoButton.textContent = "動画を表示";
+    toggleVideoButton.innerHTML = "ヒント2<br />動画を表示";
   }
 });
