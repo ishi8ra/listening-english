@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #3300ff;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 1em;
+}
+
+.audio-section {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#answer {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #3300ff;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* TODO マウスホバー時の動きをつける 任天堂みたいに */
+}
+
+.image-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+video {
+  max-width: auto;
+  width: 600px;
+  height: 300px;
+}
+
+#imageFigure {
+  display: none;
+}
