@@ -1,81 +1,16 @@
-2023-09-20T19:54:50.958+09:00  INFO 51 --- [http-nio-8080-exec-7] quiz.demo.HelloController                : This is index
-2023-09-20T19:55:18.065+09:00  INFO 51 --- [http-nio-8080-exec-1] quiz.demo.HelloController                : シンプルログテスト
-2023-09-20T19:56:10.851+09:00  INFO 51 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-09-20T19:56:10.855+09:00  INFO 51 --- [Thread-120] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-20T19:56:10.856+09:00  INFO 51 --- [Thread-120] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-20T19:56:11.041+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Starting DemoApplication using Java 20.0.2 with PID 51 (/opt/demo/target/classes started by root in /opt/demo)
-2023-09-20T19:56:11.042+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : No active profile set, falling back to 1 default profile: "default"
-2023-09-20T19:56:11.766+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-20T19:56:11.768+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-20T19:56:11.769+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-20T19:56:11.781+09:00  INFO 51 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2023-09-20T19:56:11.782+09:00  INFO 51 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 732 ms
-2023-09-20T19:56:11.859+09:00  INFO 51 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-09-20T19:56:11.901+09:00  INFO 51 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-09-20T19:56:11.912+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-20T19:56:11.916+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Started DemoApplication in 0.998 seconds (process running for 14668.897)
-2023-09-20T19:56:11.918+09:00  INFO 51 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-09-20T19:56:14.338+09:00  INFO 51 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-09-20T19:56:14.340+09:00  INFO 51 --- [Thread-124] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-20T19:56:14.565+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Starting DemoApplication using Java 20.0.2 with PID 51 (/opt/demo/target/classes started by root in /opt/demo)
-2023-09-20T19:56:14.566+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : No active profile set, falling back to 1 default profile: "default"
-2023-09-20T19:56:15.496+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-20T19:56:15.504+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-20T19:56:15.505+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-20T19:56:15.512+09:00  INFO 51 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2023-09-20T19:56:15.513+09:00  INFO 51 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 934 ms
-2023-09-20T19:56:15.580+09:00  INFO 51 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-09-20T19:56:15.628+09:00  INFO 51 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-09-20T19:56:15.638+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-20T19:56:15.646+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Started DemoApplication in 1.245 seconds (process running for 14672.647)
-2023-09-20T19:56:15.651+09:00  INFO 51 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-09-20T19:57:22.544+09:00  INFO 51 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-09-20T19:57:22.548+09:00  INFO 51 --- [Thread-128] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-20T19:57:22.726+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Starting DemoApplication using Java 20.0.2 with PID 51 (/opt/demo/target/classes started by root in /opt/demo)
-2023-09-20T19:57:22.727+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : No active profile set, falling back to 1 default profile: "default"
-2023-09-20T19:57:23.464+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-20T19:57:23.465+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-20T19:57:23.465+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-20T19:57:23.472+09:00  INFO 51 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2023-09-20T19:57:23.473+09:00  INFO 51 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 734 ms
-2023-09-20T19:57:23.511+09:00  INFO 51 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-09-20T19:57:23.537+09:00  INFO 51 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-09-20T19:57:23.545+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-20T19:57:23.549+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Started DemoApplication in 0.939 seconds (process running for 14740.593)
-2023-09-20T19:57:23.551+09:00  INFO 51 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-09-20T19:57:23.806+09:00  INFO 51 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-20T19:57:23.808+09:00  INFO 51 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-20T19:57:23.809+09:00  INFO 51 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-09-20T19:57:23.811+09:00  INFO 51 --- [http-nio-8080-exec-1] quiz.demo.HelloController                : /opt/demo/src/main/resources/static/images/img1.png
-2023-09-20T19:57:44.776+09:00  INFO 51 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-09-20T19:57:44.780+09:00  INFO 51 --- [Thread-132] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-20T19:57:44.781+09:00  INFO 51 --- [Thread-132] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-20T19:57:44.952+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Starting DemoApplication using Java 20.0.2 with PID 51 (/opt/demo/target/classes started by root in /opt/demo)
-2023-09-20T19:57:44.953+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : No active profile set, falling back to 1 default profile: "default"
-2023-09-20T19:57:45.528+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-20T19:57:45.530+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-20T19:57:45.531+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-20T19:57:45.538+09:00  INFO 51 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2023-09-20T19:57:45.539+09:00  INFO 51 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 579 ms
-2023-09-20T19:57:45.580+09:00  INFO 51 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-09-20T19:57:45.609+09:00  INFO 51 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-09-20T19:57:45.616+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-20T19:57:45.620+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Started DemoApplication in 0.791 seconds (process running for 14762.686)
-2023-09-20T19:57:45.622+09:00  INFO 51 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-09-20T19:59:02.639+09:00  INFO 51 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-09-20T19:59:02.642+09:00  INFO 51 --- [Thread-136] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-20T19:59:02.860+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Starting DemoApplication using Java 20.0.2 with PID 51 (/opt/demo/target/classes started by root in /opt/demo)
-2023-09-20T19:59:02.861+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : No active profile set, falling back to 1 default profile: "default"
-2023-09-20T19:59:03.810+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-20T19:59:03.812+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-20T19:59:03.813+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-20T19:59:03.823+09:00  INFO 51 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2023-09-20T19:59:03.824+09:00  INFO 51 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 952 ms
-2023-09-20T19:59:03.884+09:00  INFO 51 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2023-09-20T19:59:03.931+09:00  INFO 51 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-09-20T19:59:03.938+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-20T19:59:03.943+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Started DemoApplication in 1.238 seconds (process running for 14841.051)
-2023-09-20T19:59:03.945+09:00  INFO 51 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-09-20T20:00:42.738+09:00  INFO 51 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-20T20:00:42.744+09:00  INFO 51 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-20T20:00:42.745+09:00  INFO 51 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-22T05:44:09.865+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Starting DemoApplication using Java 20.0.2 with PID 51 (/opt/demo/target/classes started by root in /opt/demo)
+2023-09-22T05:44:09.917+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-09-22T05:44:10.104+09:00  INFO 51 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-22T05:44:10.106+09:00  INFO 51 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-22T05:44:12.563+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-22T05:44:12.582+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-22T05:44:12.584+09:00  INFO 51 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-22T05:44:12.670+09:00  INFO 51 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-22T05:44:12.672+09:00  INFO 51 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2562 ms
+2023-09-22T05:44:13.086+09:00  INFO 51 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-22T05:44:13.483+09:00  INFO 51 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-22T05:44:13.520+09:00  INFO 51 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-22T05:44:13.534+09:00  INFO 51 --- [restartedMain] quiz.demo.DemoApplication                : Started DemoApplication in 5.042 seconds (process running for 5.739)
+2023-09-22T05:44:47.242+09:00  INFO 51 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-22T05:44:47.244+09:00  INFO 51 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-22T05:44:47.247+09:00  INFO 51 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

@@ -18,3 +18,20 @@ function submitAnswer() {
       }
     });
 }
+
+const toggleImgButton = document.getElementById("toggleImgButton");
+const imageFigure = document.getElementById("imageFigure");
+imageFigure.style.display = "none";
+
+toggleImgButton.addEventListener("click", function () {
+  console.log(imageFigure.style.display);
+  console.log("toggleImgButton's EventListener is called");
+
+  if (imageFigure.style.display === "none") {
+    imageFigure.style.display = "block";
+    toggleImgButton.textContent = "画像を非表示";
+  } else {
+    imageFigure.style.display = "none";
+    toggleImgButton.textContent = "画像を表示";
+  }
+});

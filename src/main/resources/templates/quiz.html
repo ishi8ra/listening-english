@@ -1,29 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <title>英語リスニングクイズ</title>
-    <style>
-      #answerInput {
-        width: 300px;
-      }
-    </style>
-    <script src="js/quiz.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/quiz.js" defer></script>
   </head>
   <body>
-    <h1>英語リスニングクイズ</h1>
-    <div class="audio-player">
-      <audio id="audioElement" controls src="/audio/apple.mp3"></audio>
-    </div>
-    <div>
-      <input type="text" id="answer" placeholder="聞き取った英語をタイプして下さい" />
-      <input type="button" value="回答送信" onclick="submitAnswer();" />
-    </div>
-    <div id="result">正誤表記の場所</div>
+    <header>
+      <h1>英語リスニングクイズ</h1>
+    </header>
 
-    <p>
-      <!-- <img src="/opt/demo/src/main/resources/static/images/img1.png" alt="画像1" /> -->
-      <img src="images/img1.png" alt="画像1" />
-    </p>
+    <section class="audio-section">
+      <div class="audio-player">
+        <audio id="audioElement" controls>
+          <source src="/audio/apple.mp3" type="audio/mp3" />
+          あなたのブラウザはオーディタグをサポートしていません。
+        </audio>
+      </div>
+
+      <div class="answer-section">
+        <input type="text" id="answer" placeholder="聞き取った英語をタイプして下さい" />
+        <button onclick="submitAnswer();">回答送信</button>
+      </div>
+
+      <div id="result">正誤表記の場所</div>
+    </section>
+
+    <section class="image-section">
+      <button id="toggleImgButton">画像を表示</button>
+
+      <figure id="imageFigure">
+        <img src="images/img1.png" alt="画像1" width="600" height="300" />
+        <!-- TODO: サイズ、CSSに書いたほうがいいかも -->
+        <figcaption>これはimgタグのキャプションです</figcaption>
+      </figure>
+    </section>
+
+    <section class="video-section">
+      <button id="toggleVideoButton">画像を表示</button>
+      <figure>
+        <video controls>
+          <source src="videos/mentalist_E18_S1.mp4" type="video/mp4" />
+        </video>
+        <figcaption>これはビデオタグのキャプションです</figcaption>
+      </figure>
+    </section>
   </body>
 </html>
