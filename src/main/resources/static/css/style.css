@@ -44,6 +44,7 @@ button {
   cursor: pointer;
 
   /* TODO マウスホバー時の動きをつける 任天堂みたいに */
+  /* TODO クリックのアクションを付ける */
 }
 
 .image-section {

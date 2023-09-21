@@ -35,3 +35,20 @@ toggleImgButton.addEventListener("click", function () {
     toggleImgButton.textContent = "画像を表示";
   }
 });
+
+const toggleVideoButton = document.getElementById("toggleVideoButton");
+const videoFigure = document.getElementById("videoFigure");
+videoFigure.style.display = "none";
+
+toggleVideoButton.addEventListener("click", function () {
+  console.log(videoFigure.style.display);
+  console.log("toggleVideoButton's EventListener is called");
+
+  if (videoFigure.style.display === "none") {
+    videoFigure.style.display = "block";
+    toggleVideoButton.textContent = "動画を非表示";
+  } else {
+    videoFigure.style.display = "none";
+    toggleVideoButton.textContent = "動画を表示";
+  }
+});
