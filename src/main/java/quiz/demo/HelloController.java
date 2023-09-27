@@ -11,11 +11,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 
-  private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
+  // private static final Logger logger =
+  // LoggerFactory.getLogger(HelloController.class);
 
   @GetMapping("/quiz")
   public String quiz() {
 
     return "quiz";
+  }
+
+  @GetMapping("/index")
+  public String index() {
+
+    return "index";
   }
 }
