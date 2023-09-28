@@ -2,11 +2,11 @@
   "compilerOptions": {
     "target": "ES5",
     "module": "CommonJS",
-    "outDir": "./dist",
+    "outDir": "src/main/resources/static/js",
     "strict": true,
     "esModuleInterop": true
   },
   "include": [
-    "/Users/fishi/Programming/demo/ts/index.ts"
+    "src/main/resources/ts/test2.ts"
   ]
 }

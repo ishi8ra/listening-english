@@ -6,11 +6,11 @@ module.exports = {
   mode: "development", // "production" | "development" | "none"
 
   // メインとなるJavaScriptファイル（エントリーポイント）
-  entry: "./ts/index.ts",
+  entry: "/Users/fishi/Programming/demo/src/main/resources/static/js/test2.ts",
 
   output: {
-    path: path.join(__dirname, "dist"),
-    filename: "index.js",
+    path: path.join(__dirname, "js"),
+    filename: "test2.js",
   },
 
   module: {
