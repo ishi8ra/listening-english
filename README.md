@@ -1,5 +1,4 @@
 # listening-english
 
 https://speechling.com/jp/dictation/english
-↑
-このサイト
+  このサービスが、イメージに近い
