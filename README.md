@@ -1,4 +1,5 @@
-# listening-english
+#1 どんなサービスか
+ディクテーションをやりやすくする
 
 [このサービス](https://speechling.com/jp/dictation/english)が、イメージに近い
 
