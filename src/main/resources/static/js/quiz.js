@@ -1,5 +1,33 @@
+const answerHistory = [];
+
 function submitAnswer() {
   const userAnswer = document.getElementById("answer").value;
+
+  // 回答とタイムスタンプを履歴に追加
+  answerHistory.push({ answer: userAnswer });
+
+  // 回答回数を計算
+  const answerSubmitNumber = answerHistory.length;
+
+  // 履歴表示
+  const historyDiv = document.getElementById("history");
+  const newHistoryItem = document.createElement("div");
+  newHistoryItem.innerHTML = `<strong>${answerSubmitNumber}回目の回答</strong> ${userAnswer}`;
+  historyDiv.appendChild(newHistoryItem);
+
+  // 正解かどうかをチェック（仮実装）
+  const isCorrect = true; // 本当はサーバから結果を取得
+
+  // 正解なら穴に答えを埋める
+  if (isCorrect && selectedWordIndex !== -1) {
+    const sentenceDiv = document.getElementById("sentence");
+    const words = sentenceDiv.innerText.split(" ");
+    words[selectedWordIndex] = userAnswer;
+    sentenceDiv.innerHTML = words
+      .map((word, i) => `<span onclick='selectWord(${i})'>${word}</span>`)
+      .join(" ");
+  }
+
   fetch("/check-answer", {
     method: "POST", // 送信
     headers: {
@@ -18,37 +46,3 @@ function submitAnswer() {
       }
     });
 }
-
-const toggleImgButton = document.getElementById("toggleImgButton");
-const imageFigure = document.getElementById("imageFigure");
-imageFigure.style.display = "none";
-
-toggleImgButton.addEventListener("click", function () {
-  console.log(imageFigure.style.display);
-  console.log("toggleImgButton's EventListener is called");
-
-  if (imageFigure.style.display === "none") {
-    imageFigure.style.display = "block";
-    toggleImgButton.textContent = "画像を非表示";
-  } else {
-    imageFigure.style.display = "none";
-    toggleImgButton.textContent = "画像を表示";
-  }
-});
-
-const toggleVideoButton = document.getElementById("toggleVideoButton");
-const videoFigure = document.getElementById("videoFigure");
-videoFigure.style.display = "none";
-
-toggleVideoButton.addEventListener("click", function () {
-  console.log(videoFigure.style.display);
-  console.log("toggleVideoButton's EventListener is called");
-
-  if (videoFigure.style.display === "none") {
-    videoFigure.style.display = "block";
-    toggleVideoButton.textContent = "動画を非表示";
-  } else {
-    videoFigure.style.display = "none";
-    toggleVideoButton.textContent = "動画を表示";
-  }
-});
