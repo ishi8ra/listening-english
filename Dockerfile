@@ -1,11 +1,11 @@
-# ベースとなるイメージを指定
+# ビルドステージ
+FROM maven:3.8.1-jdk-11 AS build
+WORKDIR /workspace/app
+COPY . .
+RUN mvn clean package
+
+# 実行ステージ
 FROM openjdk:11-jdk-slim
-
-# アプリケーションが使用するポートを指定
+COPY --from=build /workspace/app/target/demo-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
-
-# JARファイルをコピー
-COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
-
-# コマンドラインで実行するコマンドを指定
 ENTRYPOINT ["java","-jar","/app.jar"]
