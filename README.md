@@ -1,5 +1,3 @@
 # listening-english
 
-https://speechling.com/jp/dictation/english
-
-このサービスが、イメージに近い
+[このサービス]([url](https://speechling.com/jp/dictation/english)https://speechling.com/jp/dictation/english)が、イメージに近い
