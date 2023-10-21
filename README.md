@@ -15,7 +15,9 @@
 2. `cd listening-english`
 3. `docker build -t listening-english:latest .`
 4. docker-compose up
-5. ブラウザでhttp://localhost:8080/quiz にアクセスしたら、使えるます。
+5. ブラウザでhttp://localhost:8080/quiz にアクセス
+6. 英語を再生
+7. 聞き取った英文を回答記入欄にタイプ
 
 ### 上記の確認環境(つまり、私の開発環境)
 - MacOS Monterey
