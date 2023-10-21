@@ -1,4 +1,4 @@
-#1 どんなサービスか
+# どんなサービスか
 ディクテーションをやりやすくする
 
 [このサービス](https://speechling.com/jp/dictation/english)が、イメージに近い
