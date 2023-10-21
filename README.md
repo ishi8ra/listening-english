@@ -3,6 +3,7 @@
 
 ディクテーションとは、聞き取った英文を文字に書き起こす、というリスニング勉強方法の一つ。
 
+### 似たサービス例
 [Speechiling](https://speechling.com/jp/dictation/english)が、イメージに近い
 
 ### その理由
