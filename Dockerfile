@@ -1,5 +1,5 @@
 # ビルドステージ
-FROM maven:3.8.1-jdk-17 AS build
+FROM maven:3.8.1-openjdk-17 AS build
 WORKDIR /workspace/app
 COPY . .
 RUN mvn clean package
