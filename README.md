@@ -3,7 +3,7 @@
 
 ディクテーションとは、聞き取った英文を文字に書き起こす、というリスニング勉強方法の一つ。
 
-[このサービス](https://speechling.com/jp/dictation/english)が、イメージに近い
+[Speechiling](https://speechling.com/jp/dictation/english)が、イメージに近い
 
 ### その理由
 部分的に正解してる場合、それを示してくれる。
