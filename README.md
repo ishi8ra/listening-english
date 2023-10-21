@@ -18,9 +18,9 @@
 5. ブラウザでhttp://localhost:8080/quiz にアクセスしたら、使えるます。
 
 ### 上記の確認環境(つまり、私の開発環境)
-MacOS Monterey
-Intel coreI7
-Chrome
+- MacOS Monterey
+- Intel coreI7
+- Chrome
 
 # 似たサービス例
 [Speechiling](https://speechling.com/jp/dictation/english)が、イメージに近い
