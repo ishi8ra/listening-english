@@ -15,7 +15,7 @@
 2. `cd listening-english`
 3. `docker build -t listening-english:latest .`
 4. docker-compose up
-5. ブラウザで『http://localhost:8080/quiz』にアクセスしたら、使えるはず。
+5. ブラウザでhttp://localhost:8080/quiz にアクセスしたら、使えるはず。
 
 # 似たサービス例
 [Speechiling](https://speechling.com/jp/dictation/english)が、イメージに近い
