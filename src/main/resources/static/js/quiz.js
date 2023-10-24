@@ -1,7 +1,24 @@
 const answerHistory = [];
 
-function submitAnswer() {
+async function submitAnswer() {
   const userAnswer = document.getElementById("answer").value;
+
+  // サーバーから正解データを取得
+  const questionId = 1; // 仮の問題ID
+  const response = await fetch(`/api/questions/${questionId}`);
+  const data = await response.json();
+  const correctAnswer = data.correctAnswer;
+
+  // 正誤判定
+  const isCorrect = userAnswer === correctAnswer;
+
+  // 結果表示
+  const resultDiv = document.getElementById("result");
+  if (isCorrect) {
+    resultDiv.textContent = "正解";
+  } else {
+    resultDiv.textContent = "不正解";
+  }
 
   // 回答とタイムスタンプを履歴に追加
   answerHistory.push({ answer: userAnswer });

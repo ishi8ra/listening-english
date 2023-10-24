@@ -1,4 +1,4 @@
-package quiz.demo;
+package quiz.demo.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
