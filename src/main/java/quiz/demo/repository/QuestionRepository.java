@@ -1,8 +1,10 @@
-package quiz.demo.repository; // パッケージ名を修正
+package quiz.demo.repository;
 
-import quiz.demo.model.Question; // Question クラスをインポート
-import org.springframework.data.jpa.repository.JpaRepository; // JpaRepository をインポート
+import quiz.demo.model.Question;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface QuestionRepository extends JpaRepository<Question, Long> {
 
 }

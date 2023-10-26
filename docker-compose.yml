@@ -11,9 +11,11 @@ services:
       TZ: Asia/Tokyo
   
   db:
+    build: ./db 
     image: mysql:8.0
     ports:
       - "3307:3306"
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     environment:
       MYSQL_DATABASE: quiz_db
       MYSQL_ROOT_USER: root

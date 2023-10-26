@@ -1,6 +1,6 @@
 const answerHistory = [];
 
-async function submitAnswer() {
+async function saveAnswer() {
   const userAnswer = document.getElementById("answer").value;
 
   // サーバーから正解データを取得
