@@ -1,24 +1,8 @@
 const answerHistory = [];
 
 async function saveAnswer() {
+  console.log("saveAnswer is called");
   const userAnswer = document.getElementById("answer").value;
-
-  // サーバーから正解データを取得
-  const questionId = 1; // 仮の問題ID
-  const response = await fetch(`/api/questions/${questionId}`);
-  const data = await response.json();
-  const correctAnswer = data.correctAnswer;
-
-  // 正誤判定
-  const isCorrect = userAnswer === correctAnswer;
-
-  // 結果表示
-  const resultDiv = document.getElementById("result");
-  if (isCorrect) {
-    resultDiv.textContent = "正解";
-  } else {
-    resultDiv.textContent = "不正解";
-  }
 
   // 回答とタイムスタンプを履歴に追加
   answerHistory.push({ answer: userAnswer });
@@ -55,3 +39,52 @@ async function saveAnswer() {
   newHistoryItem.innerHTML = `<strong>${answerSubmitNumber}回目の回答</strong> ${styledAnswer}`;
   historyDiv.appendChild(newHistoryItem);
 }
+
+function submitAnswer() {
+  console.log("submitAnswer is called");
+  const questionId = 3;
+  console.log("Before fetch");
+
+  fetch(`/api/questions/${questionId}`)
+    .then((response) => {
+      console.log("response: ", response);
+      return response.json();
+    })
+    .then((data) => {
+      console.log("data: ", data);
+      const correctAnswer = data.correctAnswer;
+      console.log("correctAnswer: " + correctAnswer);
+      // 最後に保存された回答を取得
+      const savedAnswer =
+        answerHistory.length > 0 ? answerHistory[answerHistory.length - 1].answer : null;
+
+      // 正誤判定
+      const isCorrect = savedAnswer === correctAnswer;
+
+      // 結果表示
+      const resultDiv = document.getElementById("result");
+      if (isCorrect) {
+        resultDiv.textContent = "正解である";
+      } else {
+        resultDiv.textContent = "不正解あっちょんぷりけ";
+      }
+    })
+    .catch((error) => {
+      console.log("Fetch failed", error);
+    });
+
+  console.log("After fetch");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const saveButton = document.getElementById("saveButton");
+  const submitButton = document.getElementById("submitButton");
+
+  if (saveButton) {
+    saveButton.addEventListener("click", saveAnswer);
+  }
+
+  if (submitButton) {
+    submitButton.addEventListener("click", submitAnswer);
+  }
+});
